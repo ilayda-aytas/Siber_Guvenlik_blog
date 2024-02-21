@@ -13,3 +13,4 @@ adres çözümleme protokolü(ARP)kullanılır.ARP tüm ağda hedef Mac adresini
 -Localhost, cihazın kendi ağ adresini belirten IP adresi aralığıdır. Cihazda yerel olarak çalışan hizmetlere erişmek için kullanılır.
 Genellikle "127.0.0.1" IP adresi olarak bilinir. Ancak, "127.0.0.1 - 127.255.255.255" aralığındaki herhangi bir IP adresi bu amaçla 
 kullanılabilir. Diğer bir adı ise "loopback" adresidir.
+

@@ -1,1 +1,6 @@
+IPv4 ve IPv6 olmak üzere iki farklı adresleme çeşiti vardır.
+IPv4 adresleme 32 bittir, 4 oktetten oluşur her oktet 8 bittir. Özel IP aralıkları vardır.2üzeri 32^den ıp adeti hesaplanır.
+IPv6 adresleme 12 bittir , 8 oktetten oluşur.2 üzeri 128^den ıp adresi adeti bulunur.
+
+ARP tablosu =bir bilgisayarın veya ağ cihazının yerel ağdaki diğer cihazların IP adreslerini MAC adreslerine eşlemek için kullandığı bir veritabanıdır. Bu tablo, bir cihazın IP adresi belirli olduğunda, hedef cihazın fiziksel MAC adresini bilmek için kullanılır.
 

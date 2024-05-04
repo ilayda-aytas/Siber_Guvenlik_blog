@@ -1,29 +1,38 @@
 OSI bir standart olmasından dolayı ortama göre değişiklik göstermez.
-
 OSI Modeli, bilgisayar ağları üzerinden veri iletişimini yedi katmana ayıran bir kavramsal modeldir. Bu katmanlar, karmaşık bir sistemi daha küçük, daha yönetilebilir parçalara ayırır ve her katman belirli bir işlevden sorumludur.
 Uygulamaların birbiriyle nasıl ve ne şekilde iletişim kuracaklarını tanımlar.
 
+
 ------------OSI Katmanları------------
 
-1. Fiziksel Katman:
-** Ağ donanımı ile veri iletişimini sağlar. Kablolar, arabirimler, sinyaller ve elektriksel özellikler gibi fiziksel unsurları kapsar.
-2. Veri Bağlantı Katmanı:
-** Verilerin hatasız bir şekilde iletilmesini sağlar. Hata tespiti ve düzeltme, çerçeveleme ve erişim kontrolü gibi işlevleri içerir.
-3. Ağ Katmanı:
-**Verilerin farklı ağlar arasında yönlendirilmesini sağlar. IP adresleme, yönlendirme ve paketleme gibi işlevleri içerir.
-4. Taşıma Katmanı:
-** Verilerin uçtan uca iletilmesini sağlar. Güvenilirlik, hata kontrolü ve segmentleme gibi işlevleri içerir.
-5. Oturum Katmanı:
-** İki sistem arasında iletişim kurulmasını ve sürdürülmesini sağlar. Oturum açma, senkronizasyon ve diyalog yönetimi gibi işlevleri içerir.
-6. Sunum Katmanı:
-** Verilerin formatlanması ve sunumunu sağlar. Veri şifreleme, sıkıştırma ve temsili gibi işlevleri içerir.
-7. Uygulama Katmanı:
-** Kullanıcı uygulamaları için ağ hizmetlerini sağlar. Dosya aktarımı, e-posta, web tarayıcıları ve diğer uygulamalar gibi işlevleri içerir.
+1. Fiziksel Katman (Physical Layer):
+Ağ donanımı ile veri iletişimini sağlar. Kablolar, arabirimler, sinyaller ve elektriksel özellikler gibi fiziksel unsurları kapsar.
+Veriler elektrik ,radyo ve ışık sinyallerine çevirilir ve aktarılır.
 
+2. Veri Bağlantı Katmanı (Data Link layer ):
+Network üzerinde yer alan diğer cihazları tanımlar.
+Kablonun o anda kiin tarafından kulanıldığını tespit eder.
+Fiziksel katmandan gelen verinin doğruluğunu ,hata kontrolünü sağlar. 
+
+3. Ağ Katmanı (Network Layer):
+Verilerin farklı ağlar arasında yönlendirilmesini sağlar. IP adresleme, yönlendirme ve paketleme gibi işlevleri içerir.
+
+4. Taşıma Katmanı:
+Verilerin uçtan uca iletilmesini sağlar. Güvenilirlik, hata kontrolü ve segmentleme gibi işlevleri içerir.
+
+5. Oturum Katmanı:
+İki sistem arasında iletişim kurulmasını ve sürdürülmesini sağlar. Oturum açma, senkronizasyon ve diyalog yönetimi gibi işlevleri içerir.
+
+6. Sunum Katmanı:
+Verilerin formatlanması ve sunumunu sağlar. Veri şifreleme, sıkıştırma ve temsili gibi işlevleri içerir.
+
+7. Uygulama Katmanı:
+Kullanıcı uygulamaları için ağ hizmetlerini sağlar. Dosya aktarımı, e-posta, web tarayıcıları ve diğer uygulamalar gibi işlevleri içerir.
+  
 ---------------Her Katmanda Kullanılan Bazı Protokoller-------
 
 1)**Fiziksel Katman:**
-
+                                                          
 *Ethernet:** Yaygın olarak kullanılan bir kablolu ağ protokolüdür.
 *Wi-Fi:** Kablosuz ağlarda veri iletişimi için kullanılır.
 *DSL:** Telefon hatları üzerinden veri iletişimi için kullanılır.

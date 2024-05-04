@@ -1,6 +1,94 @@
-IPv4 ve IPv6 olmak üzere iki farklı adresleme çeşiti vardır.
-IPv4 adresleme 32 bittir, 4 oktetten oluşur her oktet 8 bittir. Özel IP aralıkları vardır.2üzeri 32^den ıp adeti hesaplanır.
-IPv6 adresleme 12 bittir , 8 oktetten oluşur.2 üzeri 128^den ıp adresi adeti bulunur.
+ARP Tablosu =bir bilgisayarın veya ağ cihazının yerel ağdaki diğer cihazların IP adreslerini MAC adreslerine eşlemek için kullandığı bir veritabanıdır. Bu tablo, bir cihazın IP adresi belirli olduğunda, hedef cihazın fiziksel MAC adresini bilmek için kullanılır.
 
-ARP tablosu =bir bilgisayarın veya ağ cihazının yerel ağdaki diğer cihazların IP adreslerini MAC adreslerine eşlemek için kullandığı bir veritabanıdır. Bu tablo, bir cihazın IP adresi belirli olduğunda, hedef cihazın fiziksel MAC adresini bilmek için kullanılır.
+IP hesaplamaları, bilgisayar ağlarında **IP adresleri** ile ilgili çeşitli işlemleri kapsar. IP adresleri, bir ağdaki her bir cihaza benzersiz bir şekilde tanımlamak için kullanılan 32 bitlik sayılardır. IP hesaplamaları, ağ yöneticilerinin ve kullanıcılara IP adreslerini yönetmelerine, ağ altyapılarını planlamalarına ve sorunları teşhis etmelerine yardımcı olur.
+
+----------------------------IP Adresi Çeşitleri----------------------------
+
+    IPv4: En yaygın kullanılan IP adres türüdür. 32 bitten oluşur ve 0.0.0.0 ila 255.255.255.255 arasındaki değerleri alabilir.
+4 oktetten oluşur her oktet 8 bittir. Özel IP aralıkları vardır.2üzeri 32^den ıp adeti hesaplanır.
+IPv4 adres alanında beş sınıf bulunur: **A, B, C, D ve E**. Her sınıfın belirli bir IP adres aralığı vardır ve bu, ağınızda kaç cihazın olabileceğini belirler. Genellikle **A**, **B** ve **C** sınıfları internet üzerindeki çoğu cihaz tarafından kullanılırken, **D** ve **E** sınıfları özel amaçlar için kullanılır. İşte bu beş IP sınıfının özetleri:
+
+1. **Sınıf A (Class A)**:
+   - Büyük ağlar (örneğin, kuruluşlar) için tasarlanmıştır.
+   - İlk oktet ağ kimliği için kullanılır ve her zaman sıfır ile başlar.
+   - Kalan üç oktet, yaklaşık 17 milyon cihaza izin verir.
+   - Genel IP Aralığı: 1.0.0.0 - 127.0.0.0
+   - Özel IP Aralığı: 10.0.0.0 - 10.255.255.255
+
+2. **Sınıf B (Class B)**:
+   - Orta büyüklükteki ağlar (örneğin, çok uluslu şirketler) için uygundur.
+   - İlk iki oktet ağ kimliği için kullanılır.
+   - Üçüncü ve dördüncü oktet, yaklaşık 65.000 cihaza izin verir.
+   - Genel IP Aralığı: 128.0.0.0 - 191.255.0.0
+   - Özel IP Aralığı: 172.16.0.0 - 172.31.255.255
+
+3. **Sınıf C (Class C)**:
+   - Küçük yerel ağlarda (örneğin, okullar ve kolejler) kullanılır.
+   - İlk üç oktet ağ kimliği için kullanılır.
+   - Son oktet, 254 cihaza izin verir.
+   - Genel IP Aralığı: 192.0.0.0 - 223.255.255.0
+   - Özel IP Aralığı: 192.168.0.0 - 192.168.255.255
+
+4. **Sınıf D (Class D)**:
+   - Çok noktaya yayın (multicast) için uygundur.
+   - Genel IP Aralığı: 224.0.0.0 - 239.255.255.255
+
+5. **Sınıf E (Class E)**:
+   - Özel amaçlar için ayrılmıştır ve genellikle kullanılmaz.
+   - Genel IP Aralığı: 240.0.0.0 - 255.255.255.255
+
+ IPv6: IPv4'ten daha yeni ve daha geniş bir adresleme alanı sunan bir IP adres türüdür. 128 bitten oluşur ve 16 basamaklı heksadesimal sayılar içerir.12 bittir , 8 oktetten oluşur.2 üzeri 128^den ıp adresi adeti bulunur.
+
+------------------------------IP Hesaplamaları------------------------------
+
+  1)Ağ Adresi Hesaplama:
+Bir IP adresinin hangi ağa ait olduğunu belirlemek için kullanılır.
+Ağ adresi: Bir ağdaki tüm cihazların ortak bir kısmını temsil eden IP adresidir.
+*Ağ Adresi = IP Adresi AND Ağ Maskesi
+IP Adresi: 192.168.1.10
+Ağ Maskesi: 255.255.255.0
+Ağ Adresi = 192.168.1.0
+
+  3)Yayın Adresi:
+Bir ağdaki tüm cihazlara aynı anda gönderilen veri paketlerini temsil eden özel bir IP adresidir.
+Her alt ağın bir yayın adresi vardır ve bu adres her zaman son IP adresidir.
+255.255.255.255 gibi en yüksek bitlerin 1 olduğu özel bir adres kullanılarak temsil edilir.
+Örneğin, 192.168.1.0/24 alt ağında son IP adresi 192.168.1.255’dir.
+*Yayın Adresi = Ağ Adresi OR TAMAMLAYICI (Ağ Maskesi)
+IP Adresi: 192.168.1.10
+Ağ Maskesi: 255.255.255.0
+Yayın Adresi = 192.168.1.255
+
+  2)Ana Bilgisayar Adresi Hesaplama:
+Bir IP adresinin hangi ana bilgisayara ait olduğunu belirlemek için kullanılır.
+*Ana Bilgisayar Adresi = IP Adresi OR TAMAMLAYICI (Ağ Maskesi)
+IP Adresi: 192.168.1.10
+Ağ Maskesi: 255.255.255.0
+Ana Bilgisayar Adresi = 192.168.1.10
+
+  4)Alt Ağ Oluşturma (Subnetting):
+Büyük bir ağdan daha küçük ağ bölümleri oluşturmak için kullanılır.
+Her alt ağ, kendi IP aralığına sahiptir ve bu sayede ağ trafiği daha etkin yönetilir.
+Alt ağlar, ağ maskesi (subnet mask) ile tanımlanır.
+*Alt Ağ Oluşturma: Alt Ağ Bit Sayısı = 32 - Ağ Bit Sayısı - Alt Ağ Sayısı
+Ağ Bit Sayısı: 24
+Alt Ağ Sayısı: 2
+Alt Ağ Bit Sayısı = 32 - 24 - 2 = 6
+
+  5)Alt Ağ Maskesi (Subnet Mask):
+Alt ağ maskesi, IP adresinin hangi bölümünün ağ bölümü, hangi bölümünün host bölümü olduğunu belirler.
+Örneğin, 255.255.255.0 maskesi, ilk üç oktetin ağ kimliğini ve dördüncü oktetin cihaz kimliğini temsil ettiğini gösterir.
+*Ağ Maskesi = 2^(32 - Ağ Bit Sayısı) - 1 = 255
+Ağ Bit Sayısı: 24 
+Ağ Maskesi = 255.255.255.0
+  
+  6)IP Adresi Dönüşümü:
+Bir IP adresini başka bir IP adresine dönüştürmek için kullanılır.
+NAT (Network Address Translation) gibi teknikler kullanılarak yapılabilir.
+*IP Adresi Dönüştürme: Onlu sayıdan ikiliye veya hexadecimale dönüştürmek 
+IP Adresi: 192.168.1.10
+Onludan İkiliye: 11000000 10101000 00000001 00001010
+Onludan Hexadecimale: C
+
+Not:Ağ maskesi ve alt ağ maskesi aynı şeyi ifade eder.
 

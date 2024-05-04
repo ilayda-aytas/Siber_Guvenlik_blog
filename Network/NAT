@@ -1,1 +1,27 @@
+NAT Nedir? Siber Güvenlikte Nasıl Kullanılır?
+NAT (Network Address Translation), Türkçe'ye Ağ Adresi Çevirisi olarak çevrilen bir ağ güvenlik teknolojisidir. Bu teknoloji, birden fazla özel IP adresini tek bir genel IP adresine dönüştürerek çalışır.
+
+NAT'ın Kullanım Amacı:
+• IP adresini korumak: NAT, özel IP adreslerini internetten gelen doğrudan trafikten gizleyerek ağınızı daha güvenli hale getirir.
+• NAT, sınırlı sayıda genel IP adresiyle çok sayıda cihazı internete bağlamayı mümkün kılar. Bu sayede, internet servis sağlayıcıları (ISP'ler) her cihaza ayrı bir IP adresi atamak zorunda kalmaz.
+• NAT, ağ trafiğini yönetmeyi ve izlemeyi kolaylaştırır.
+
+NAT Türleri:
+• 1:1 NAT: Bu en basit NAT türüdür. Her bir özel IP adresine tek bir genel IP adresi atanır.
+• NAT-PAT (Port Address Translation): Bu NAT türü, birden fazla özel IP adresini tek bir genel IP adresine dönüştürmek için port numaralarını kullanır.
+• NAT-E (Network Address and Port Translation): Bu NAT türü, hem IP adreslerini hem de port numaralarını kullanarak özel IP adreslerini genel IP adreslerine dönüştürür.
+
+NAT'ın Avantajları:
+• Güvenliği artırır: NAT, özel IP adreslerini gizleyerek ağınızı daha güvenli hale getirir.
+• Paradan tasarruf sağlar: NAT, sınırlı sayıda genel IP adresiyle çok sayıda cihazı internete bağlamayı mümkün kılarak ISP ücretlerinden tasarruf etmenizi sağlar.
+• Ağ trafiğini yönetmeyi kolaylaştırır: NAT, ağ trafiğini yönetmeyi ve izlemeyi kolaylaştırır.
+
+NAT'ın Dezavantajları:
+• Karmaşıklık: NAT, kurulumu ve yönetimi karmaşık olabilir.
+• Bazı uygulamalarla uyumsuzluk: NAT, bazı uygulamalarla uyumsuzluk yaşayabilir.
+• Performans düşüşü: NAT, bazı durumlarda ağ performansında düşüşe neden olabilir.
+
+NAT'ın Siber Güvenlikte Önemi:
+NAT, siber güvenlikte önemli bir rol oynar. Ağınızı daha güvenli hale getirmeye ve sınırlı sayıda genel IP adresiyle çok sayıda cihazı internete bağlamaya yardımcı olur.
+
 

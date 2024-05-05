@@ -1,1 +1,19 @@
+  Üçlü El Sıkışma, TCP/IP modelinin **Taşıma Katmanı**'nda kullanılan ve bir ağ üzerinden iletişim kuran iki uygulama arasında güvenilir bir bağlantı kurmak için kullanılan temel bir işlemdir. TCP/IP modelinin kendisi doğrudan Üçlü El Sıkışma işlemini yönetmez, ancak Taşıma Katmanı içerisinde çalışan TCP protokolü, güvenli bir bağlantı oluşturmak için bu el sıkışma yöntemini kullanır.
 
+---------------TCP/IP Model Katmanları---------------
+
+1. **Uygulama Katmanı:** Kullanıcı uygulamalarına ağ hizmetleri sağlar (örneğin, web tarama, e-posta).
+2. **Taşıma Katmanı (TCP'nin Çalıştığı Katman):** Farklı cihazlardaki uygulamalar arasında güvenilir veri iletimini sağlar. (Üçlü El Sıkışma burada gerçekleşir)
+3. **Ağ Katmanı:** Veri paketlerini IP adreslerine göre ağlar arasında yönlendirir.
+4. **Erişim Katmanı:** Verilerin bir ağ ortamı (kablo, Wi-Fi gibi) üzerinden fiziksel olarak nasıl iletileceğini kontrol eder.
+
+-----------------Üçlü El Sıkışma-------------------
+1.SYN (Senkronize): İstemci, bir bağlantı kurma isteğini belirtmek ve bir senkronizasyon sıra numarası eklemek için SYN bayrağı işaretli bir paket gönderir.
+2.SYN-ACK (Senkronize Onay)(Synchronize-Acknowledge): Sunucu, hem SYN hem de ACK (Onay) bayrakları işaretli bir paketle yanıt verir.Kendi senkronizasyon sıra numarasını içerir ve istemcinin sıra numarasını onaylar.
+3.ACK (Onay): İstemci, sunucunun sıra numarasını onaylayan ACK bayrağı işaretli son bir paket gönderir.
+
+Bu el sıkışma tamamlandıktan sonra, istemci ve sunucu arasında güvenilir bir bağlantı kurulur ve veri güvenli bir şekilde alışveriş edilebilir.
+
+NOT:
+* Üçlü El Sıkışma, eski oturumlardan kaynaklanan bağlantı girişimlerini önlemeye yardımcı olur ve her iki tarafın da iletişime geçmeye hazır olduğundan emin olur.
+* TCP Taşıma Katmanı'nda çalışırken, gerçek veri aktarımı (paketler) TCP/IP modelinin alt katmanları (Ağ ve Erişim Katmanı) üzerinden seyahat eder.

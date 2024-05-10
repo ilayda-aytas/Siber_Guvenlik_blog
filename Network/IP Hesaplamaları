@@ -43,7 +43,7 @@ kullanılırken, **D** ve **E** sınıfları özel amaçlar için kullanılır. 
    - Genel IP Aralığı: 240.0.0.0 - 255.255.255.255
 
  IPv6: IPv4'ten daha yeni ve daha geniş bir adresleme alanı sunan bir IP adres türüdür. 128 bitten oluşur ve 16 basamaklı 
-heksadesimal sayılar içerir.12 bittir , 8 oktetten oluşur.2 üzeri 128^den ıp adresi adeti bulunur.
+heksadesimal sayılar içerir.8 oktetten oluşur.2 üzeri 128^den ıp adresi adeti bulunur.
 
 ------------------------------IP Hesaplamaları------------------------------
 

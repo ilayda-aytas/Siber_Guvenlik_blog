@@ -1,12 +1,17 @@
-ARP Tablosu =bir bilgisayarın veya ağ cihazının yerel ağdaki diğer cihazların IP adreslerini MAC adreslerine eşlemek için kullandığı bir veritabanıdır. Bu tablo, bir cihazın IP adresi belirli olduğunda, hedef cihazın fiziksel MAC adresini bilmek için kullanılır.
+ARP Tablosu =bir bilgisayarın veya ağ cihazının yerel ağdaki diğer cihazların IP adreslerini MAC adreslerine eşlemek için kullandığı
+bir veritabanıdır. Bu tablo, bir cihazın IP adresi belirli olduğunda, hedef cihazın fiziksel MAC adresini bilmek için kullanılır.
 
-IP hesaplamaları, bilgisayar ağlarında **IP adresleri** ile ilgili çeşitli işlemleri kapsar. IP adresleri, bir ağdaki her bir cihaza benzersiz bir şekilde tanımlamak için kullanılan 32 bitlik sayılardır. IP hesaplamaları, ağ yöneticilerinin ve kullanıcılara IP adreslerini yönetmelerine, ağ altyapılarını planlamalarına ve sorunları teşhis etmelerine yardımcı olur.
+IP hesaplamaları, bilgisayar ağlarında **IP adresleri** ile ilgili çeşitli işlemleri kapsar. IP adresleri, bir ağdaki her bir 
+cihaza benzersiz bir şekilde tanımlamak için kullanılan 32 bitlik sayılardır. IP hesaplamaları, ağ yöneticilerinin ve kullanıcılara 
+IP adreslerini yönetmelerine, ağ altyapılarını planlamalarına ve sorunları teşhis etmelerine yardımcı olur.
 
 ----------------------------IP Adresi Çeşitleri----------------------------
 
     IPv4: En yaygın kullanılan IP adres türüdür. 32 bitten oluşur ve 0.0.0.0 ila 255.255.255.255 arasındaki değerleri alabilir.
 4 oktetten oluşur her oktet 8 bittir. Özel IP aralıkları vardır.2üzeri 32^den ıp adeti hesaplanır.
-IPv4 adres alanında beş sınıf bulunur: **A, B, C, D ve E**. Her sınıfın belirli bir IP adres aralığı vardır ve bu, ağınızda kaç cihazın olabileceğini belirler. Genellikle **A**, **B** ve **C** sınıfları internet üzerindeki çoğu cihaz tarafından kullanılırken, **D** ve **E** sınıfları özel amaçlar için kullanılır. İşte bu beş IP sınıfının özetleri:
+IPv4 adres alanında beş sınıf bulunur: **A, B, C, D ve E**. Her sınıfın belirli bir IP adres aralığı vardır ve bu,
+ağınızda kaç cihazın olabileceğini belirler. Genellikle **A**, **B** ve **C** sınıfları internet üzerindeki çoğu cihaz tarafından
+kullanılırken, **D** ve **E** sınıfları özel amaçlar için kullanılır. İşte bu beş IP sınıfının özetleri:
 
 1. **Sınıf A (Class A)**:
    - Büyük ağlar (örneğin, kuruluşlar) için tasarlanmıştır.
@@ -37,7 +42,8 @@ IPv4 adres alanında beş sınıf bulunur: **A, B, C, D ve E**. Her sınıfın b
    - Özel amaçlar için ayrılmıştır ve genellikle kullanılmaz.
    - Genel IP Aralığı: 240.0.0.0 - 255.255.255.255
 
- IPv6: IPv4'ten daha yeni ve daha geniş bir adresleme alanı sunan bir IP adres türüdür. 128 bitten oluşur ve 16 basamaklı heksadesimal sayılar içerir.12 bittir , 8 oktetten oluşur.2 üzeri 128^den ıp adresi adeti bulunur.
+ IPv6: IPv4'ten daha yeni ve daha geniş bir adresleme alanı sunan bir IP adres türüdür. 128 bitten oluşur ve 16 basamaklı 
+heksadesimal sayılar içerir.12 bittir , 8 oktetten oluşur.2 üzeri 128^den ıp adresi adeti bulunur.
 
 ------------------------------IP Hesaplamaları------------------------------
 

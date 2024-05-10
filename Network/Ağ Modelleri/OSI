@@ -17,6 +17,7 @@ Fiziksel katmandan gelen verinin doğruluğunu ,hata kontrolünü sağlar.
 HDLC: Noktadan noktaya veri iletişimi için kullanılır.
 PPP: Noktadan noktaya ve çoklu noktadan noktaya veri iletişimi için kullanılır.
 Ethernet: Ethernet çerçevelerinin oluşturulması ve işlenmesi için kullanılır.
+MAC adresi  urada kullanılır.
 
 	3. Ağ Katmanı (Network Layer):
 Verilerin farklı ağlar arasında yönlendirilmesini sağlar. IP adresleme, yönlendirme ve paketleme gibi işlevleri içerir.

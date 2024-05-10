@@ -12,7 +12,7 @@ DSL: Telefon hatları üzerinden veri iletişimi için kullanılır.
 
 	2. Veri Bağlantı Katmanı (Data Link layer ):
 Network üzerinde yer alan diğer cihazları tanımlar.
-Kablonun o anda kiin tarafından kulanıldığını tespit eder.
+Kablonun o anda kim tarafından kulanıldığını tespit eder.
 Fiziksel katmandan gelen verinin doğruluğunu ,hata kontrolünü sağlar. 
 HDLC: Noktadan noktaya veri iletişimi için kullanılır.
 PPP: Noktadan noktaya ve çoklu noktadan noktaya veri iletişimi için kullanılır.
